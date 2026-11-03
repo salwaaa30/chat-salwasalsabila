@@ -36,7 +36,7 @@ async function generateIcons() {
       await sharp(SOURCE_IMAGE)
         .resize(size, size, {
           fit: 'contain',
-          background: { r: 37, g: 99, b: 235, alpha: 1 }, // bg biru sesuai theme_color
+          background: { r: 255, g: 247, b: 251, alpha: 1 },
         })
         .png()
         .toFile(outputFile);
